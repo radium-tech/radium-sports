@@ -1,0 +1,19 @@
+.option {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.selected > a > .icon > img{
+  filter: invert(12%) sepia(98%) saturate(6911%) hue-rotate(22deg) brightness(94%) contrast(94%);
+}
+
+.selected {
+  border-bottom: 2px solid #C92207;
+  border-radius: 2px;
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+}
