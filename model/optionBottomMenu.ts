@@ -1,14 +1,21 @@
 export default class OptionBottomMenuModel {
+  #title: string
+
   #iconPath: string
 
   #link: string
 
   #selected: boolean
 
-  constructor(iconPath: string, link: string, selected = false) {
+  constructor(title: string, iconPath: string, link: string, selected = false) {
+    this.#title = title;
     this.#iconPath = iconPath;
     this.#link = link;
     this.#selected = selected;
+  }
+
+  get title() {
+    return this.#title;
   }
 
   get iconPath() {
@@ -21,10 +28,5 @@ export default class OptionBottomMenuModel {
 
   get selected() {
     return this.#selected;
-  }
-
-  select() {
-    const selected = true;
-    return new OptionBottomMenuModel(this.iconPath, this.link, selected);
   }
 }
