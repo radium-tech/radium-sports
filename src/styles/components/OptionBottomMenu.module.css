@@ -4,7 +4,7 @@
   margin: 5px;
 }
 
-.selected > a > .icon > img{
+.selected > .icon > img{
   filter: invert(12%) sepia(98%) saturate(6911%) hue-rotate(22deg) brightness(94%) contrast(94%);
 }
 
