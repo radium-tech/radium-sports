@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
+import Link from 'next/link';
 import OptionBottomMenuModel from '../../../model/optionBottomMenu';
 import styles from '../../styles/components/OptionBottomMenu.module.css';
 import updateOption from '../../../functions/optionsBottomMenu';
@@ -17,11 +18,11 @@ export default function OptionBottomMenu({ option }: OptionBottomMenuProps) {
     const selectedOption = getOption.selected ? styles.selected : '';
     return (
       <div className={`${styles.option} ${selectedOption}`}>
-        <a href={getOption.link}>
+        <Link href={getOption.link} passHref>
           <div className={styles.icon}>
             <img src={getOption.iconPath} alt="" />
           </div>
-        </a>
+        </Link>
       </div>
     );
   }
