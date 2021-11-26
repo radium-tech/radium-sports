@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link';
-import OptionBottomMenuModel from '../../../model/optionBottomMenu';
+import OptionBottomMenuModel from '../../model/optionBottomMenu';
 import styles from '../../styles/components/OptionBottomMenu.module.css';
-import updateOption from '../../../functions/optionsBottomMenu';
+import updateOption from '../../functions/optionsBottomMenu';
 
 interface OptionBottomMenuProps {
   option: OptionBottomMenuModel;

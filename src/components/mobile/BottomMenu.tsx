@@ -1,5 +1,5 @@
 import React from 'react';
-import OptionBottomMenuModel from '../../../model/optionBottomMenu';
+import OptionBottomMenuModel from '../../model/optionBottomMenu';
 import styles from '../../styles/components/BottomMenu.module.css';
 import OptionBottomMenu from './OptionBottomMenu';
 
