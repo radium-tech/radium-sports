@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../../styles/components/NewsNavigation.module.css';
+import styles from '../../styles/components/mobile/NewsNavigation.module.css';
 
 interface NewsNavigationProps {
   items: {
